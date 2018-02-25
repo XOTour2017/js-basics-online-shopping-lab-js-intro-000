@@ -41,7 +41,7 @@ function viewCart() {
           const mostItems = items.slice(0, -1);
           const lastItem = items.slice(-1)[ 0 ];
           console.log(`In your cart, you have ${mostItems.join(", ")} and ${lastItem}.`);
-       
+
       }
     }
   }
