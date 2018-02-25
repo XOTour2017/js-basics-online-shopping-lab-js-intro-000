@@ -34,7 +34,7 @@ function viewCart() {
     // if it is, then it'll add an "and" after the first comma and finish the function
     // if not then output will be: In your cart, you have banana at $77.
     if(items.length == 2) {
-      return(`In your cart, you have ${items.join(" and ") + "."}`);
+      console.log(`In your cart, you have ${items.join(" and ") + "."}`);
     }
     // otherwise if there is three or more items in the cart then these conditions will activate
     else {
