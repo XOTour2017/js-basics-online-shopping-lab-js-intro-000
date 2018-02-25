@@ -38,23 +38,13 @@ function viewCart() {
     }
     // otherwise if there is three or more items in the cart then these conditions will activate
     else {
-      // another for loop to iterate over the cart array
-      for(var x=0; x < cart.length; x++) {
-        // testing to see the indexes: 0,1,2
-        // condition to see if it isn't the last item in cart
-        if(x+1 != cart.length) {
-           console.log(`In your cart, you have ${items.join(", ") + "."}`);
-        }
-        // condition if it is the last item
-        else {
           const mostItems = items.slice(0, -1);
           const lastItem = items.slice(-1)[ 0 ];
-          console.log(`In your cart, you have ${mostItems.join(", and ")}${lastItem}.`);
-        }
+          console.log(`In your cart, you have ${mostItems.join(", ")} and ${lastItem}.`);
+       
       }
     }
   }
-}
 
 function total() {
   var totalValue = [];
