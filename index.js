@@ -41,7 +41,6 @@ function viewCart() {
       // another for loop to iterate over the cart array
       for(var x=0; x < cart.length; x++) {
         // testing to see the indexes: 0,1,2
-        console.log(x)
         // condition to see if it isn't the last item in cart
         if(x+1 != cart.length) {
            console.log(`In your cart, you have ${items.join(", ") + "."}`);
